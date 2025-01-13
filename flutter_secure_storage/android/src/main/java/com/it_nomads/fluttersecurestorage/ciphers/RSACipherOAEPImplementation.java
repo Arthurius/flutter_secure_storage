@@ -25,7 +25,7 @@ public class RSACipherOAEPImplementation extends RSACipher18Implementation {
 
     @Override
     protected String createKeyAlias() {
-        return context.getPackageName() + ".FlutterSecureStoragePluginKeyOAEP";
+        return context.getPackageName() + ".FlutterSecureStoragePluginOldKeyOAEP";
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)

@@ -42,7 +42,7 @@ void main() {
     FlutterSecureStoragePlatform createTarget() {
       TestWidgetsFlutterBinding.instance.defaultBinaryMessenger
           .setMockMethodCallHandler(
-        const MethodChannel('plugins.it_nomads.com/flutter_secure_storage'),
+        const MethodChannel('plugins.it_nomads.com/flutter_secure_storage_old'),
         (methodCall) async {
           assert(false, 'MethodChanel is called.');
           return null;
@@ -306,7 +306,7 @@ void main() {
     ) {
       TestWidgetsFlutterBinding.instance.defaultBinaryMessenger
           .setMockMethodCallHandler(
-        const MethodChannel('plugins.it_nomads.com/flutter_secure_storage'),
+        const MethodChannel('plugins.it_nomads.com/flutter_secure_storage_old'),
         handler,
       );
       return ffi.createFlutterSecureStorageWindows(
@@ -1023,7 +1023,7 @@ void main() {
     FlutterSecureStoragePlatform createTarget() {
       TestWidgetsFlutterBinding.instance.defaultBinaryMessenger
           .setMockMethodCallHandler(
-        const MethodChannel('plugins.it_nomads.com/flutter_secure_storage'),
+        const MethodChannel('plugins.it_nomads.com/flutter_secure_storage_old'),
         (methodCall) async {
           switch (methodCall.method) {
             case 'read':

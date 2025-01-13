@@ -1,5 +1,5 @@
 //
-//  SwiftFlutterSecureStoragePlugin.swift
+//  SwiftFlutterSecureStoragePluginOld.swift
 //  flutter_secure_storage
 //
 //  Created by Julian Steenbakker on 22/08/2022.
@@ -7,13 +7,13 @@
 
 import Flutter
 
-public class SwiftFlutterSecureStoragePlugin: NSObject, FlutterPlugin {
+public class SwiftFlutterSecureStoragePluginOld: NSObject, FlutterPlugin {
     
     private let flutterSecureStorageManager: FlutterSecureStorage = FlutterSecureStorage()
     
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "plugins.it_nomads.com/flutter_secure_storage", binaryMessenger: registrar.messenger())
-        let instance = SwiftFlutterSecureStoragePlugin()
+        let instance = SwiftFlutterSecureStoragePluginOld()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
     

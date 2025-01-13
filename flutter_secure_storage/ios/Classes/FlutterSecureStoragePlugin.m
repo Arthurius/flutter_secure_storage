@@ -1,33 +1,33 @@
 #import "FlutterSecureStoragePlugin.h"
-#if __has_include(<flutter_secure_storage/flutter_secure_storage-Swift.h>)
-#import <flutter_secure_storage/flutter_secure_storage-Swift.h>
+#if __has_include(<flutter_secure_storage_old/flutter_secure_storage_old-Swift.h>)
+#import <flutter_secure_storage_old/flutter_secure_storage_old-Swift.h>
 #else
 // Support project import fallback if the generated compatibility header
 // is not copied when this plugin is created as a library.
 // https://forums.swift.org/t/swift-static-libraries-dont-copy-generated-objective-c-header/19816
-#import "flutter_secure_storage-Swift.h"
+#import "flutter_secure_storage_old-Swift.h"
 #endif
 
-@implementation FlutterSecureStoragePlugin
+@implementation FlutterSecureStoragePluginOld
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
-  [SwiftFlutterSecureStoragePlugin registerWithRegistrar:registrar];
+  [SwiftFlutterSecureStoragePluginOld registerWithRegistrar:registrar];
 }
 @end
 
 
-//#import "FlutterSecureStoragePlugin.h"
+//#import "FlutterSecureStoragePluginOld.h"
 //
 //static NSString *const CHANNEL_NAME = @"plugins.it_nomads.com/flutter_secure_storage";
 //
 //static NSString *const InvalidParameters = @"Invalid parameter's type";
 //
-//@interface FlutterSecureStoragePlugin()
+//@interface FlutterSecureStoragePluginOld()
 //
 //@property (strong, nonatomic) NSDictionary *query;
 //
 //@end
 //
-//@implementation FlutterSecureStoragePlugin
+//@implementation FlutterSecureStoragePluginOld
 //
 //- (instancetype)init {
 //    self = [super init];
@@ -43,7 +43,7 @@
 //    FlutterMethodChannel* channel = [FlutterMethodChannel
 //                                     methodChannelWithName:CHANNEL_NAME
 //                                     binaryMessenger:[registrar messenger]];
-//    FlutterSecureStoragePlugin* instance = [[FlutterSecureStoragePlugin alloc] init];
+//    FlutterSecureStoragePluginOld* instance = [[FlutterSecureStoragePluginOld alloc] init];
 //    [registrar addMethodCallDelegate:instance channel:channel];
 //}
 //

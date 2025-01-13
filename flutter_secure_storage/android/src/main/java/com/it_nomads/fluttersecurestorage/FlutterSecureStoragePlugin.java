@@ -20,7 +20,7 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 
-public class FlutterSecureStoragePlugin implements MethodCallHandler, FlutterPlugin {
+public class FlutterSecureStoragePluginOld implements MethodCallHandler, FlutterPlugin {
 
     private static final String TAG = "FlutterSecureStoragePl";
     private MethodChannel channel;

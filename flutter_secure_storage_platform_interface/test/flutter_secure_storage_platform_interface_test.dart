@@ -38,7 +38,7 @@ void main() {
 
   group('MethodChannelFutterSecureStorage', () {
     const channel =
-        MethodChannel('plugins.it_nomads.com/flutter_secure_storage');
+        MethodChannel('plugins.it_nomads.com/flutter_secure_storage_old');
 
     final log = <MethodCall>[];
 

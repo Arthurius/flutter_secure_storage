@@ -1,7 +1,7 @@
 part of '../flutter_secure_storage_platform_interface.dart';
 
 const MethodChannel _channel =
-    MethodChannel('plugins.it_nomads.com/flutter_secure_storage');
+    MethodChannel('plugins.it_nomads.com/flutter_secure_storage_old');
 
 class MethodChannelFlutterSecureStorage extends FlutterSecureStoragePlatform {
   @override

@@ -8,7 +8,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_secure_storage:
+  flutter_secure_storage_old:
     # When depending on this package from a real application you should use:
     #   flutter_secure_storage: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

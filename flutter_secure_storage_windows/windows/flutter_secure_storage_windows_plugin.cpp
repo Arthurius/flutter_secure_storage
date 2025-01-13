@@ -108,7 +108,7 @@ namespace
   {
     auto channel =
         std::make_unique<flutter::MethodChannel<flutter::EncodableValue>>(
-            registrar->messenger(), "plugins.it_nomads.com/flutter_secure_storage",
+            registrar->messenger(), "plugins.it_nomads.com/flutter_secure_storage_old",
             &flutter::StandardMethodCodec::GetInstance());
 
     auto plugin = std::make_unique<FlutterSecureStorageWindowsPlugin>();
